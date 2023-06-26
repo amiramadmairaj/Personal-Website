@@ -1,34 +1,225 @@
 <!DOCTYPE html>
-<html lang = "en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
-    <title>Amir Mairaj's Portfolio</title>
-    <link rel = "stylesheet" href = "about.css">
-
-</head>
-<body>
-    <div class = "hero">
-        <nav>
-            <a href="index.html">
-                <img src="images/logo.png" alt="" style="max-width: 200px; height: auto;">
-            </a>
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="portfolio.html">PORTFOLIO</a></li>
-                <li><a href="https://www.linkedin.com/in/amir-mairaj" target="_blank">LINKEDIN</a></li>
-                <li><a href="https://github.com/amiramadmairaj" target="_blank">GITHUB</a></li>
-            </ul>
-        </nav>
-
-    <body>
-        <div class="container">
-            <h1>This Page is Under Construction</h1>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Amir Mairaj's Portfolio</title>
+      <link rel="stylesheet" href="portfolio.css">
+   </head>
+   <body>
+      <div class="hero">
+      <nav>
+         <a href="index.html">
+         <img src="images/logo.png" alt="" style="max-width: 200px; height: auto;">
+         </a>
+         <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="https://www.linkedin.com/in/amir-mairaj" target="_blank">LINKEDIN</a></li>
+            <li><a href="https://github.com/amiramadmairaj" target="_blank">GITHUB</a></li>
+         </ul>
+      </nav>
+      <!-- RECENT PROJECTS -->
+      <div class="container">
+         <section class="projects">
+            <h2>Recent Projects</h2>
+         
+         <div class="slideshow-container">
+            <!-- Odyssey -->
+            <div class="mySlides fade">
+               <div class="numbertext">1 / 4</div>
+               <img src="images/odyssey.png" style="">
+               <!-- <div class="project-title">Odyssey</div> -->
+               <div class="project-title" style="font-size: larger; font-weight: bold;">Odyssey</div>
+               <div class="project-description">
+                  <p>
+                     At Odyssey, I held a pivotal position in the development of a React web application used by internally by Odyssey employees. This webapp utilized AWS Amplify, DynamoDB, Lambda, and API Gateways to create a full stack web application. My contributions encompassed the implementation of crucial features such as sign-in/authentication and continuous integration/continuous deployment (CI/CD). 
+                     To enhance functionality, I extensively utilized AWS Lambda to facilitate OpenAI API calls triggered by user questionnaire submissions within the mobile app to create three possible AI generated itenaries for the Odyssey employee (travel planner) to choose from. DynamoDB served as the storage solution for user data and preferences, ensuring scalability and efficiency.
+                     Operating in accordance with agile methodologies, our team consistently achieved timely milestones, resulting in the delivery of a seamless travel planning experience tailored to the needs of remote workers.
+                     <br>
+                  </p>
+               </div>
+            </div>
+            <div class="mySlides fade">
+               <!-- Slumber -->
+               <div class="numbertext">2 / 4</div>
+               <div class="image-container">
+                  <img src="images/slumber0.png">
+                  <img src="images/slumber1.png">
+                  <img src="images/slumber2.png">
+               </div>
+               <!-- <div class="project-title">Slumber</div> -->
+               <div class="project-title" style="font-size: larger; font-weight: bold;">Slumber</div>
+               <div class="project-description">
+                  <p>
+                     I co-developed Slumber, an iOS wellness app that seamlessly integrated with Apple Watch and HealthKit. 
+                     With Swift and SwiftUI, we implemented real-time biometric data collection and leveraged CoreML to provide personalized sleep and exercise recommendations based off a machine learning model created with training data we collected. 
+                     Slumber aimed to quantify sleep tracking and analysis, empowering users with tailored suggestions for a healthier lifestyle.
+                     <br>
+                  </p>
+               </div>
+            </div>
+            <div class="mySlides fade">
+               <!-- MNST -->
+               <div class="numbertext">3 / 4</div>
+               <img src="images/mnst.png" style="width:1000px">
+               <!-- <div class="project-title">MNST</div> -->
+               <div class="project-title" style="font-size: larger; font-weight: bold;">MNST</div>
+               <div class="project-description">
+                  <p>
+                     In my Fashion-MNIST Dataset Classification Project, I implemented and assessed the performance of diverse machine learning classifiers, including K-nearest neighbors, Logistic Regression, Neural Networks, and Random Forest, using sci-kit-learn.
+                     I meticulously fine-tuned their hyperparameters to optimize their performance on the Fashion-MNIST dataset.
+                     Through comprehensive evaluation using various metrics and visualizations, I successfully identified the most effective classifier for the task and produced informative graphs and charts that highlighted the differences between the classification methodologies. This project showcases my ability to accurately classify data and effectively visualize and compare the results of machine learning classifiers.
+                     <br>
+                  </p>
+               </div>
+            </div>
+            <div class="mySlides fade">
+               <!-- Web Scraper -->
+               <div class="numbertext">4 / 4</div>
+               <img src="images/webscraper.png" style="width:1000px">
+               <!-- <div class="project-title">Web Scraper</div> -->
+               <div class="project-title" style="font-size: larger; font-weight: bold;">Web Scraper</div>
+               <div class="project-description">
+                  <p>
+                     I created a highly efficient web scraper that effectively extracted data from UCI subdomains.
+                     By tokenizing words and creating an inverted index, I developed the foundation for a sophisticated search engine.
+                     Using techniques such as hashing, Cosine similarity, and TF-IDF, I ensured the retrieval of unique and relevant information.
+                     The search engine also featured a sleek user interface, delivering accurate search results and demonstrating my expertise in web scraping and information retrieval.
+                     <br>
+                  </p>
+               </div>
+            </div>
+            <!-- Next & previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+         </div>
+      </div>
+      <script>
+         let slideIndex = 1;
+         showSlides(slideIndex);
+         
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+         
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+         
+         function showSlides(n) {
+           let i;
+           let slides = document.getElementsByClassName("mySlides");
+           if (n > slides.length) { slideIndex = 1; }
+           if (n < 1) { slideIndex = slides.length; }
+           for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+           }
+           slides[slideIndex - 1].style.display = "block";
+         }
+      </script>
+    </section>
+      <!-- EDUCATION -->
+      <section class="education">
+         <h2><br>Education</h2>
+         <div class="Education Description">
+         <p>
+          <p>
+            <strong>UC Irvine, BS Computer Science with Specialization in Information Systems</strong> 2019 - Current (Expected Graduation Fall 2023)<br>
+         <ul>
+            GPA: 3.71 <br>
+            Deans Honor List <br>
             <br>
-            <p>Please check back later. </p>
-            <p> - Amir</p>
+         </p>
+      </section>
+      <!-- EXPERIENCE -->
+      <section class="experience">
+        <h2>Experience</h2>
+        <div class="Experience Description">
+           <ul>
+              <li>
+                 <strong>Backend Software Engineer Intern, Odyssey</strong> (February 2023 - June 2023)
+                 <ul>
+                    <li>Developed a full-stack React web application using AWS Amplify, incorporating sign-in/sign-out authentication and CI/CD implementation.</li>
+                    <li>Leveraged AWS Lambda for executing OpenAI API calls and managed data retrieval and storage through DynamoDB.</li>
+                    <li>Designed efficient DynamoDB tables to store and manage user data, ensuring seamless access to past itineraries and preferences.</li>
+                    <li>Collaborated in agile software development methodologies, meeting project milestones on time and within scope.</li>
+                    <br>
+                 </ul>
+              </li>
+              <li>
+                 <strong>Office of Information Technology Consultant, UC Irvine</strong> (December 2021 - Current)
+                 <ul>
+                    <li>Efficiently handled complex user requests, improving issue resolution efficiency by analyzing diagnostic information.</li>
+                    <li>Reduced escalations to higher-level technical experts by 25% through meticulous problem characterization and collaboration with OIT units.</li>
+                    <li>Provided ad-hoc training to empower users in navigating and utilizing OIT applications effectively.</li>
+                    <li>Utilized ServiceNow for comprehensive support activity tracking and data-driven analysis.</li>
+                    <li>Contributed to enhancing client self-help systems, resulting in a significant decrease in repetitive common questions.</li>
+                    <li>Assisted with administrative tasks, demonstrating adaptability and a strong work ethic.</li>
+                    <br>
+                  </ul>
+              </li>
+              <li>
+                 <strong>Co-Lead, Google Developer Student Club</strong> (August 2022 - Current)
+                 <ul>
+                    <li>Collaborated with the GDSC team to set goals, plan activities, and establish a clear vision for the club as well as delegated tasks and responsibilities, ensuring a well-coordinated and efficient workflow.</li>
+                    <li>Fostered a positive and inclusive team environment, promoting collaboration and personal growth.</li>
+                    <li>Managed event logistics, including venue booking, equipment setup, and participant registrations.</li>
+                    <li>Facilitated knowledge-sharing and mentorship opportunities within the GDSC community.</li>
+                    <li>Communicated regularly with the team, providing updates on progress and challenges.</li>
+                    <br>
+                  </ul>
+              </li>
+           </ul>
         </div>
-    </body>
-    </html>
+     </section>
+      <!-- CERTIFICATIONS -->
+      <section class="certifications">
+         <h2>Certifications</h2>
+         <p class="content"><strong>AWS Cloud Practitioner - **IN PROGRESS**</strong></p>
+         <ul>
+            <li>Earned on: N/A</li>
+            <li>License Number: N/A</li>
+         </ul>
+      </section>
+      <!-- SKILLS -->
+      <section class="skills">
+         <h2>Skills</h2>
+         <div class="content"><strong>Programming Languages:</strong></p>
+         <ul>
+            <li>Python</li>
+            <li>C++</li>
+            <li>Java</li>
+            <li>Swift</li>
+         </ul>
+         <p class="content"><strong>Web Development:</strong></p>
+         <ul>
+            <li>HTML/CSS</li>
+         </ul>
+         <p class="content"><strong>Database:</strong></p>
+         <ul>
+            <li>MySQL</li>
+            <li>DynamoDB</li>
+         </ul>
+         <p class="content"><strong>Cloud Technologies:</strong></p>
+         <ul>
+            <li>AWS (Lambda, DynamoDB, API Gateway, S3)</li>
+            <li>Google Cloud Platform</li>
+         </ul>
+         <p class="content"><strong>Machine Learning:</strong></p>
+         <ul>
+            <li>scikit-learn</li>
+            <li>PyTorch</li>
+            <li>Keras</li>
+         </ul>
+      </section>
+      </div>
+
+      <footer>
+        &copy; 2023 Amir Amad Mairaj.  All rights reserved.
+      </footer>
+      
+   </body>
+</html>

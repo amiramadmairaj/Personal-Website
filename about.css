@@ -6,8 +6,8 @@
 .hero{
   position: relative;
   width: 100%;
-  height: 100vh;
-  background: #eff4fd;
+  height:  100%;;
+  background: orange;
 }
 nav{
   display: flex;
@@ -104,15 +104,27 @@ span{
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-img {
-max-width: 100%;
+/* img {
+max-width: 200px;
 height: auto;
+margin-top: 0px;
 margin-bottom: 20px;
 border-radius: 50%;
+} */
+
+img {
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
 color: #333;
+font-size: xx-large;
+margin-top: 20px;
+margin-bottom: 15px;
 }
 
 p {
@@ -132,15 +144,15 @@ text-align: center;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 120vh;
+  height: 90vh;
   text-align: left;
-  font-size: 16px;
+  font-size: 20px;
   font-family: Arial, sans-serif;
 }
 
 .container a {
 display: inline-block;
-padding: 10px 20px;
+margin-top: 0;
 background-color: #333;
 color: #fff;
 text-decoration: none;
@@ -164,3 +176,41 @@ h1 {
   text-align: center;
 }
 
+.image-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-container img {
+  margin-right: 30px; 
+}
+
+.ticker {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.ticker ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  animation: ticker 10s infinite linear;
+}
+
+.ticker li {
+  display: inline-block;
+  padding-right: 3em;
+  font-size: 30px;
+  font-family: Arial, sans-serif;
+  color: red;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(300%);
+  }
+}
