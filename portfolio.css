@@ -1,0 +1,29 @@
+.project-d .heading {
+  font-family: "Handjet", cursive;
+  font-size: 300%;
+  text-align: center;
+  margin: 0 auto;
+}
+.portfolio {
+  font-family: "Handjet", cursive;
+  font-size: 600%;
+}
+a {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.stacks {
+  text-align: left;
+}
