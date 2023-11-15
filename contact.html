@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+
+<!--
+  WRITTEN BY: Amir Mairaj
+  EMAIL: amairaj@uci.edu
+  -->
+<!-- This HTML document is my Contact page, where users can contact me and it gets sent to my professional email-->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's get in touch! Amir Mairaj Contact Form</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap" rel="stylesheet">
+
+
+    <body class="body">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="Logo" style="max-width: 30%; height: auto" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/amir-mairaj" target="_blank">LINKEDIN</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/amiramadmairaj" target="_blank">GITHUB</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <!-- This is the Contact form the user must fill out -->
+
+        <div class="contact_container">
+            <form onsubmit="sendEmail(); reset(); return false ">
+                <h2 class="contact">Let's get in touch!</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Name" required />
+                <br/>
+                <label for="email">Email: </label>
+                <input type="email" id="email" placeholder="Your Email" required />
+                <br/>
+                <label for="phone">Phone #: </label>
+                <input type="text" id="phone" placeholder="Your Phone Number" />
+                <br/>
+                <label for="subject">Subject: </label>
+                <input type="text" id="subject" placeholder="Subject" required />
+                <br/>
+                <label for="message">Message: </label>
+                <textarea id="message" rows="5" placeholder="What would you like to say to Amir?"></textarea>
+                <br/>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <!-- Code to send email, emails are sent via https://smtpjs.com/ -->
+        <!-- Collect user input and formulate an email to be sent out. -->
+        <script src="https://smtpjs.com/v3/smtp.js "></script>
+        <script>
+            function sendEmail() {
+                Email.send({
+                    SecureToken: "c9457800-bdd1-4773-8a53-788b7a8617ee ",
+                    To: "amirmairaj2001@gmail.com ",
+                    From: document.getElementById("email").value,
+                    Subject: document.getElementById("subject").value,
+                    Body: "Name: " + document.getElementById("name").value + "<br> Phone: " + document.getElementById("phone").value + "<br> Email: " + document.getElementById("email").value + "<br> Message: " + document.getElementById("message").value,
+                }).then((message) => alert(message));
+            }
+        </script>
+        <footer class="text-center mt-4">
+            &copy; 2023 Amir Amad Mairaj. All rights reserved.
+        </footer>
+    </body>
+
+</html>

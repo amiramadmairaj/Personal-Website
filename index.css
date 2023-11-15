@@ -1,39 +1,67 @@
+/* Style for images within elements with the class .hover-move-image */
+
 .hover-move-image img {
   max-width: 70%;
+  /* Set maximum image width to 70% */
   transition: transform 0.8s ease-out;
+  /* Add a transform transition for smooth hover effect */
 }
+
+/* Hover effect for images within elements with the class .hover-move-image */
 
 .hover-move-image:hover img {
   transform: translateX(55%);
+  /* Move image horizontally by 55% when hovered */
 }
+
+/* Increase font size for elements with the class .nav-item */
+
 .nav-item {
   font-size: 120%;
 }
+
+/* Set the background color of the body to light blue */
 
 .body {
   background-color: lightblue;
 }
 
+/* Style for elements with the class .centered */
+
 .centered {
   position: absolute;
   top: 60%;
+  /* Position the element 60% from the top of its container */
   left: 14%;
+  /* Position the element 14% from the left of its container */
   font-family: "Handjet", cursive;
+  /* Use the "Handjet" cursive font */
   font-size: 220%;
+  /* Set font size to 220% */
 }
+
+/* Set font family for paragraphs (p) to "IBM Plex Mono" for a monospace font */
 
 p {
   font-family: "IBM Plex Mono", monospace;
 }
 
+/* Style for elements with the class .hi */
+
 .hi {
   font-family: "Handjet", cursive;
+  /* Use the "Handjet" cursive font */
   font-size: 300%;
+  /* Set font size to 300% */
 }
+
+/* Set font family for all anchor (link) elements to "IBM Plex Mono" for a monospace font */
 
 a {
   font-family: "IBM Plex Mono", monospace;
 }
+
+/* Set the width of images with the class .img-fluid to 100% */
 
 .img-fluid {
   width: 100%;

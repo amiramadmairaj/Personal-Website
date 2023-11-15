@@ -1,37 +1,69 @@
+/* Styling for headings within elements with class .project-d */
+
 .project-d .heading {
   font-family: "Handjet", cursive;
+  /* Use the "Handjet" cursive font */
   font-size: 300%;
+  /* Set font size to 300% */
   text-align: center;
+  /* Center-align the text */
   margin: 0 auto;
+  /* Center the element horizontally within its container */
 }
+
+/* Styling for elements with the class .portfolio */
+
 .portfolio {
   font-family: "Handjet", cursive;
+  /* Use the "Handjet" cursive font */
   font-size: 600%;
+  /* Set font size to 600% */
 }
+
+/* Set font family for all anchor (link) elements to "IBM Plex Mono" for a monospace font */
+
 a {
   font-family: "IBM Plex Mono", monospace;
 }
+
+/* Increase font size for elements with the class .nav-item */
 
 .nav-item {
   font-size: 120%;
 }
 
+/* Set the background color of the body to light blue */
+
 .body {
   background-color: lightblue;
 }
 
+/* Style for containers */
+
 .container {
   position: relative;
+  /* Set the position relative for proper child positioning */
   max-width: 1000px;
+  /* Set the maximum container width to 1000px */
   margin: 0 auto;
+  /* Center the container horizontally within its parent */
 }
+
+/* Styling for sections */
 
 section {
   border: 1px solid #ccc;
+  /* Add a 1px solid border with a light gray color */
   padding: 20px;
+  /* Add 20px of padding inside the section */
   margin-bottom: 20px;
+  /* Add a 20px margin at the bottom of the section */
   border-radius: 5px;
+  /* Add a 5px border radius for rounded corners */
 }
+
+/* Align text within elements with the class .stacks to the left */
+
 .stacks {
   text-align: left;
 }

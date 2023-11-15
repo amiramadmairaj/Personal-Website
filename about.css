@@ -1,22 +1,38 @@
+/* Increase font size for elements with the class .nav-item */
+
 .nav-item {
   font-size: 120%;
 }
+
+/* Set the background color of the body to light blue */
+
 .body {
   background-color: lightblue;
 }
+
+/* Set font family for all paragraphs to "IBM Plex Mono" for a monospace font */
 
 p {
   font-family: "IBM Plex Mono", monospace;
 }
 
+/* Style the font family and increase font size for elements with the class .about */
+
 .about {
   font-family: "Handjet", cursive;
+  /* Use the "Handjet" cursive font */
   font-size: 600%;
+  /* Increase font size to 600% */
 }
+
+/* Set the font family for all anchor (link) elements to "IBM Plex Mono" for a monospace font */
 
 a {
   font-family: "IBM Plex Mono", monospace;
 }
+
+/* Remove margin-top for elements with the class .mb-2 */
+
 .mb-2 {
   margin-top: 0;
 }
