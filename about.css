@@ -7,7 +7,11 @@
 /* Set the background color of the body to light blue */
 
 .body {
-  background-color: lightblue;
+  background-color: black;
+}
+
+* {
+  color: white;
 }
 
 /* Set font family for all paragraphs to "IBM Plex Mono" for a monospace font */
