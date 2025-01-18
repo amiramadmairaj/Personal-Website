@@ -61,16 +61,7 @@ p {
 a {
   font-family: "IBM Plex Mono", monospace;
 }
-/* Ensure the page fills at least the height of the screen */
-html, body {
-  height: 100%;
-  margin: 0;
-}
 
-body {
-  display: flex;
-  flex-direction: column;
-}
 
 .hero {
   flex: 1;
@@ -83,20 +74,6 @@ body {
   text-align: left; /* Align text to the left */
 }
 
-footer {
-  margin-top: auto;
-  padding: 10px;
-  background-color: #f8f9fa;
-  position: relative;
-  text-align: center;
-  width: 100%;
-}
-
-/* Ensure image is properly centered and in the correct position */
-.hero img {
-  max-width: 90%;
-  border-radius: 10px;
-}
 
 /* Set the width of images with the class .img-fluid to 100% */
 
