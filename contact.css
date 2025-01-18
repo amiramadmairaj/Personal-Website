@@ -10,6 +10,10 @@
   background-color: lightblue;
 }
 
+.container {
+  display: grid;
+}
+
 /* Set font family for all anchor (link) elements to "IBM Plex Mono" for a monospace font */
 
 a {
