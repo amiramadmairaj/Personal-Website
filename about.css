@@ -12,9 +12,10 @@
   color: white;
 }
 
-.grid{
+.grid {
     display: inline-grid;
     grid-gap: 10px;
+    justify-content: space-around;
 }
 /* Set font family for all paragraphs to "IBM Plex Mono" for a monospace font */
 
