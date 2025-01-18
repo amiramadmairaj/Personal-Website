@@ -20,12 +20,13 @@
   font-size: 120%;
 }
 
-/* Set the background color of the body to light blue */
-
 .body {
-  background-color: lightblue;
+  background-color: black;
 }
 
+* {
+  color: white;
+}
 /* Style for elements with the class .centered */
 
 .centered {
