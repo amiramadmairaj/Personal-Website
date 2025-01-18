@@ -12,7 +12,7 @@
 
 .container {
   display: grid;
-  row-gap: 50px;
+  row-gap: 300px;
 }
 
 /* Set font family for all anchor (link) elements to "IBM Plex Mono" for a monospace font */
