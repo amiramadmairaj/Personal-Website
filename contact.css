@@ -4,18 +4,20 @@
   font-size: 120%;
 }
 
-/* Set the background color of the body to light blue */
 
 .body {
-  background-color: lightblue;
+  background-color: black;
+}
+
+* {
+  color: white;
 }
 
 .container_user_info {
-  display: grid;
-  grid-template-columns: 100px 400px;
-  grid-gap: 10px;
+    display: inline-grid;
+    grid-template-columns: 100px 200px;
+    grid-gap: 10px;
 }
-
 /* Set font family for all anchor (link) elements to "IBM Plex Mono" for a monospace font */
 
 a {
