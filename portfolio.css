@@ -11,6 +11,9 @@
   /* Center the element horizontally within its container */
 }
 
+* {
+  color: white;
+}
 /* Styling for elements with the class .portfolio */
 
 .portfolio {
