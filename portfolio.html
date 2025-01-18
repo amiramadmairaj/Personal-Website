@@ -1,29 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--
-WRITTEN BY: Amir Mairaj
-EMAIL: amairaj@uci.edu
--->
-
-  <!-- This is the main page of my portfolio where users are welcomed to my website -->
-
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amir Mairaj's Portfolio</title>
 
-    <!-- Include the external CSS and JavaScript libraries -->
+    <!-- External CSS and Font Libraries -->
     <link rel="stylesheet" href="portfolio.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap"
       rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -38,17 +27,11 @@ EMAIL: amairaj@uci.edu
     ></script>
   </head>
 
-  <body class="body">
-    <!-- Navigation bar -->
+  <body>
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img
-            src="images/logo.png"
-            alt="Logo"
-            style="max-width: 30%; height: auto"
-          />
-        </a>
+        <a class="navbar-brand" href="index.html">Amir Mairaj</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -61,441 +44,100 @@ EMAIL: amairaj@uci.edu
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">EXPERIENCE</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
+              <a class="nav-link" href="https://github.com/amiramadmairaj" target="_blank">GITHUB</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://www.linkedin.com/in/amir-mairaj"
-                target="_blank"
-                >LINKEDIN</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="https://github.com/amiramadmairaj"
-                target="_blank"
-                >GITHUB</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT</a>
+              <a class="nav-link" href="https://www.linkedin.com/in/amir-mairaj" target="_blank">LINKEDIN</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <header class="text-center mt-1">
-      <h1 class="portfolio">My Portfolio</h1>
-    </header>
+    <!-- About Section -->
+    <section id="about" class="text-center mt-4">
+      <h1>Welcome to My Portfolio</h1>
+      <p>
+        Hi, I’m Amir Mairaj, a Software Engineer with a strong background in
+        developing mission-critical systems and scalable software solutions.
+      </p>
+    </section>
 
-    <!-- EDUCATION -->
-    <section class="education">
-      <h2 class="heading"><br />Education</h2>
-      <div class="Education Description">
-        <strong>
-          BS Computer Science with Specialization in Information Systems</strong
-        ><br />
-        University of California, Irvine <br />
-        2019 - Current (Expected Graduation Fall 2023)
-        <ul>
-          <li>Overall GPA: 3.7</li>
-          <li>Deans Honor List (3 consective quarters) </li>
-        </ul>
+    <!-- Experience Section -->
+    <section id="experience" class="mt-5">
+      <h2>Professional Experience</h2>
+      <div>
+        <h3>Software Engineer - Peraton</h3>
+        <p>
+          Currently contributing to mission-critical software systems using
+          C++, C#, and modern microservices architecture. Experienced in
+          debugging, optimizing performance, and delivering high-quality
+          features in Agile environments.
+        </p>
+      </div>
+      <div>
+        <h3>Software Engineer - NAVAIR</h3>
+        <p>
+          Developed full-stack web applications for operational systems using
+          TypeScript/Vue.js, C#, and SQL. Focused on building efficient APIs and
+          optimizing database performance.
+        </p>
+      </div>
+      <div>
+        <h3>Backend Software Engineer Intern - Odyssey</h3>
+        <p>
+          Designed and implemented scalable backend solutions for an AI-powered
+          travel planner using AWS Amplify, Lambda, and DynamoDB.
+        </p>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section class="experience">
-      <h2 class="heading">Experience</h2>
-      <div class="Experience Description">
-        <ul>
-          <li>
-            <strong>Cyber Security Community Member, CodePath</strong>
-            (September 2023 - November 2023)
-            <ul>
-              <li>
-                Proficient in Linux command line, SSH, and RDP for system
-                administration and remote access.
-              </li>
-              <li>
-                Knowledgeable in networking, IP/DNS vulnerabilities, penetration
-                testing with Metasploit, and malware detection mechanisms.
-              </li>
-              <li>
-                Developed a strong understanding of access control and
-                authentication methods, including password security and hashing.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>Backend Software Engineer Intern, Odyssey</strong> (February
-            2023 - June 2023)
-            <ul>
-              <li>
-                Developed a full-stack React web application using AWS Amplify,
-                incorporating sign-in/sign-out authentication and CI/CD
-                implementation.
-              </li>
-              <li>
-                Leveraged AWS Lambda for executing OpenAI API calls and managed
-                data retrieval and storage through DynamoDB.
-              </li>
-              <li>
-                Designed efficient DynamoDB tables to store and manage user
-                data, ensuring seamless access to past itineraries and
-                preferences.
-              </li>
-              <li>
-                Collaborated in agile software development methodologies,
-                meeting project milestones on time and within scope.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong
-              >Office of Information Technology Consultant, UC Irvine</strong
-            >
-            (December 2021 - December 2023)
-            <ul>
-              <li>
-                Efficiently handled complex user requests, improving issue
-                resolution efficiency by analyzing diagnostic information.
-              </li>
-              <li>
-                Reduced escalations to higher-level technical experts by 25%
-                through meticulous problem characterization and collaboration
-                with OIT units.
-              </li>
-              <li>
-                Provided ad-hoc training to empower users in navigating and
-                utilizing OIT applications effectively.
-              </li>
-              <li>
-                Utilized ServiceNow for comprehensive support activity tracking
-                and data-driven analysis.
-              </li>
-              <li>
-                Contributed to enhancing client self-help systems, resulting in
-                a significant decrease in repetitive common questions.
-              </li>
-              <li>
-                Assisted with administrative tasks, demonstrating adaptability
-                and a strong work ethic.
-              </li>
-            </ul>
-          </li>
-          <li>
-            <strong>Co-Lead, Google Developer Student Club</strong> (August 2022
-            - August 2023)
-            <ul>
-              <li>
-                Collaborated with the GDSC team to set goals, plan activities,
-                and establish a clear vision for the club as well as delegated
-                tasks and responsibilities, ensuring a well-coordinated and
-                efficient workflow.
-              </li>
-              <li>
-                Fostered a positive and inclusive team environment, promoting
-                collaboration and personal growth.
-              </li>
-              <li>
-                Managed event logistics, including venue booking, equipment
-                setup, and participant registrations.
-              </li>
-              <li>
-                Facilitated knowledge-sharing and mentorship opportunities
-                within the GDSC community.
-              </li>
-              <li>
-                Communicated regularly with the team, providing updates on
-                progress and challenges.
-              </li>
-            </ul>
-          </li>
-        </ul>
+    <!-- Skills Section -->
+    <section id="skills" class="mt-5">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Programming: C++, Python, Java, TypeScript</li>
+        <li>Cloud: AWS (Lambda, DynamoDB, API Gateway)</li>
+        <li>Web Development: React, HTML, CSS</li>
+        <li>Database: PostgreSQL, DynamoDB, MySQL</li>
+        <li>Agile Methodologies: Scrum, SAFe</li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="mt-5">
+      <h2>Highlighted Projects</h2>
+      <div>
+        <h3>AI-Powered Travel Planner (Odyssey)</h3>
+        <p>
+          Developed a full-stack React application, integrating AWS services
+          like Amplify and Lambda to provide dynamic travel itineraries.
+        </p>
+      </div>
+      <div>
+        <h3>Web Scraper and Search Engine</h3>
+        <p>
+          Built a Python-based web scraper with advanced indexing techniques
+          and a Flask interface to provide efficient search results.
+        </p>
+      </div>
+      <div>
+        <h3>iOS Wellness App</h3>
+        <p>
+          Co-developed an iOS app using Swift and CoreML for real-time biometric
+          tracking and personalized recommendations.
+        </p>
       </div>
     </section>
 
-    <!-- SKILLS -->
-    <section class="skills">
-      <h2 class="heading">Skills</h2>
-      <div class="content">
-        <p><strong>Programming Languages:</strong></p>
-        <ul>
-          <li>Python</li>
-          <li>C++</li>
-          <li>Java</li>
-          <li>Swift</li>
-        </ul>
-        <p><strong>IDE(s):</strong></p>
-        <ul>
-          <li>Visual Studio Code (used for all languages)</li>
-          <li>Eclipse (for Python and Java development)</li>
-          <li>PyCharm (for Python development)</li>
-          <li>CLion (for C++ development)</li>
-          <li>XCode (for iOS development)</li>
-          <li>VIM</li>
-        </ul>
-        <p><strong>Web Development:</strong></p>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Bootstrap</li>
-          <li>JavaScript</li>
-          <li>React</li>
-        </ul>
-        <p><strong>Database:</strong></p>
-        <ul>
-          <li>MySQL</li>
-          <li>DynamoDB</li>
-        </ul>
-        <p><strong>Cloud Technologies:</strong></p>
-        <ul>
-          <li>AWS (Lambda, DynamoDB, API Gateway, S3, EC2)</li>
-          <li>Google FireBase</li>
-        </ul>
-        <p><strong>Machine Learning:</strong></p>
-        <ul>
-          <li>Scikit-Learn</li>
-          <li>PyTorch</li>
-          <li>NumPy</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- RECENT PROJECTS section -->
-    <section class="projects">
-      <h2 class="heading">Past Projects</h2>
-      <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-        crossorigin="anonymous"
-      />
-      <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"
-      ></script>
-
-      <div class="container">
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="true"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="3"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src="images/odyssey.png"
-                class="d-block w-100"
-                alt="odyssey"
-              />
-              <div class="position-relative text-center">
-                <em>AI Travel Planner: Odyssey</em><br />
-                At Odyssey, I held a pivotal position in the development of a
-                React web application used by internally by Odyssey employees.
-                This webapp utilized AWS Amplify, DynamoDB, Lambda, and API
-                Gateways to create a full stack web application. My
-                contributions encompassed the implementation of crucial features
-                such as sign-in/authentication and continuous
-                integration/continuous deployment (CI/CD). To enhance
-                functionality, I extensively utilized AWS Lambda to facilitate
-                OpenAI API calls triggered by user questionnaire submissions
-                within the mobile app to create three possible AI generated
-                itineraries for the Odyssey employee (travel planner) to choose
-                from. DynamoDB served as the storage solution for user data and
-                preferences, ensuring scalability and efficiency. Operating in
-                accordance with agile methodologies, our team consistently
-                achieved timely milestones, resulting in the delivery of a
-                seamless travel planning experience tailored to the needs of
-                remote workers.
-                <h6>Project Stack:</h6>
-                <ul class="stacks">
-                  <li>Programming Languages: Python</li>
-                  <li>Front-End Framework: React</li>
-                  <li>Backend Services: AWS Amplify</li>
-                  <li>Serverless Computing: AWS Lambda</li>
-                  <li>Database: Amazon DynamoDB</li>
-                  <li>API Gateway: AWS API Gateway</li>
-                  <li>
-                    Continuous Integration/Continuous Deployment (CI/CD): Notion
-                  </li>
-                  <li>Version Control: GitHub</li>
-                </ul>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img
-                src="images/webscraper.png"
-                class="d-block w-100"
-                alt="webscraper"
-              />
-              <div class="position-relative text-center">
-                <em>Web Scraper and Search Engine</em><br />
-                I created a highly efficient web scraper that effectively
-                extracted data from UCI subdomains. By tokenizing words and
-                creating an inverted index, I developed the foundation for a
-                sophisticated search engine. Using techniques such as hashing,
-                Cosine similarity, and TF-IDF, I ensured the retrieval of unique
-                and relevant information. The search engine also featured a
-                sleek user interface, delivering accurate search results and
-                demonstrating my expertise in web scraping and information
-                retrieval.
-                <h6>Project Stack:</h6>
-                <ul class="stacks">
-                  <li>Programming Languages: Python</li>
-                  <li>Web Scraping Library: Beautiful Soup, Scrapy</li>
-                  <li>Data Processing: NLTK</li>
-                  <li>Search Algorithms: inverted indexing, hashing, TF-IDF</li>
-                  <li>Web Framework (for User Interface): Flask</li>
-                  <li>Front-End Framework: HTML, CSS</li>
-                  <li>Version Control: GitHub</li>
-                </ul>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="image-container d-flex justify-content-center">
-                <img
-                  src="images/slumber0.png"
-                  class="mx-2 img-fluid"
-                  alt="Slumber 1"
-                  style="max-width: 60%; max-height: 300px"
-                />
-                <img
-                  src="images/slumber1.png"
-                  class="mx-2 img-fluid"
-                  alt="Slumber 2"
-                  style="max-width: 60%; max-height: 300px"
-                />
-                <img
-                  src="images/slumber2.png"
-                  class="mx-2 img-fluid"
-                  alt="Slumber 3"
-                  style="max-width: 60%; max-height: 300px"
-                />
-              </div>
-              <div class="position-relative text-center">
-                <em>iOS Wellness App: Slumber</em><br />
-                I co-developed Slumber, an iOS wellness app that seamlessly
-                integrated with Apple Watch and HealthKit. With Swift and
-                SwiftUI, we implemented real-time biometric data collection and
-                leveraged CoreML to provide personalized sleep and exercise
-                recommendations based on a machine learning model created with
-                training data we collected. Slumber aimed to quantify sleep
-                tracking and analysis, empowering users with tailored
-                suggestions for a healthier lifestyle.
-                <h6>Project Stack:</h6>
-                <ul class="stacks">
-                  <li>Programming Languages: Swift</li>
-                  <li>App Development Framework: SwiftUI</li>
-                  <li>Biometric Data Collection: Apple HealthKit</li>
-                  <li>Machine Learning: CoreML</li>
-                  <li>Data Storage: Core Data</li>
-                  <li>Version Control: GitHub</li>
-                  <li>Integrated Development Environment (IDE): Xcode</li>
-                </ul>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="image-container d-flex justify-content-center">
-                <img src="images/mnst.png" class="d-block w-100" alt="..." />
-              </div>
-              <div class="position-relative text-center">
-                <em>Fashion-MNIST Dataset Classification Project</em><br />
-                I implemented and assessed the performance of diverse machine
-                learning classifiers, including K-nearest neighbors, Logistic
-                Regression, Neural Networks, and Random Forest, using
-                scikit-learn. I meticulously fine-tuned their hyperparameters to
-                optimize their performance on the Fashion-MNIST dataset. Through
-                comprehensive evaluation using various metrics and
-                visualizations, I successfully identified the most effective
-                classifier for the task and produced informative graphs and
-                charts that highlighted the differences between the
-                classification methodologies. This project showcases my ability
-                to accurately classify data and effectively visualize and
-                compare the results of machine learning classifiers.
-                <h6>Project Stack:</h6>
-                <ul class="stacks">
-                  <li>Programming Languages: Python</li>
-                  <li>Machine Learning Libraries: scikit-learn</li>
-                  <li>Data Manipulation and Analysis: pandas, NumPy</li>
-                  <li>Data Visualization: Matplotlib, Seaborn</li>
-                  <li>
-                    Jupyter Notebooks: For interactive coding and documentation
-                  </li>
-                  <li>Version Control: GitHub</li>
-                  <li>
-                    Integrated Development Environment (IDE): Jupyter Notebook,
-                    PyCharm
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </section>
     <footer class="text-center mt-4">
-      &copy; 2024 Amir Amad Mairaj. All rights reserved.
+      <p>&copy; 2025 Amir Mairaj. All rights reserved.</p>
     </footer>
   </body>
 </html>
