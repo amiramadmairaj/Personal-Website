@@ -19,12 +19,11 @@ button {
 
 input, textarea {
   color: black;
-  background-color: white; 
-  border: 1px solid #ccc;
 }
 
 input::placeholder, textarea::placeholder {
   color: #999; 
+}
 
 
 .container_user_info {
