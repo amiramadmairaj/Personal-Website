@@ -13,23 +13,14 @@
 }
 
 .grid {
-      width: 100%; 
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-      grid-gap: 10px; 
-      padding: 0px; 
-    }
+    display: inline-grid
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
 
-.grid img {
-      width: 100%; /* Changed from 220px */
-      height: auto; /* Unchanged */
-      max-width: 100%; /* Changed from none */
-      object-fit: cover; /* Changed from fill */
-    }
 
-.row.justify-content-center {
-      width: 100%; /* Changed from 540px */
-      margin: 0px; /* Changed from 0px -12px */
-  }
 
 p {
   font-family: "IBM Plex Mono", monospace;
